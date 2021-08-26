@@ -19,7 +19,7 @@ In a nutshell here is what we gonna do in three steps:
 
 # 1. Create a django project:
 
-- Let's create a django project using this django-admin command:
+Let's create a django project using this django-admin command:
 
 ```bash
 $ django-admin startproject myApi
@@ -27,13 +27,13 @@ $ django-admin startproject myApi
 
 > this command does the same as `python manage.py startproject myApi`
 
-- Let's then cd to our newly created django project `cd myApi` and create a virtualenv with:
+Let's then cd to our newly created django project `cd myApi` and create a virtualenv with:
 
 ```bash
 $ python3 -m virtualenv env
 ```
 
-- Finally let's activate our virtual env with:
+Finally let's activate our virtual env with:
 
 ```bash
 $ source env/bin/activate
@@ -41,14 +41,14 @@ $ source env/bin/activate
 
 # 2. Setup django rest framework and dr_scaffold:
 
-- Let's install django rest framework and dr_scaffold packages using pip like the following:
+Let's install django rest framework and dr_scaffold packages using pip like the following:
 
 ```bash
 $ pip install djangorestframework
 $ pip install dr-scaffold
 ```
 
-- Next let's add these packages to our project `INSTALLED_APPS` inside `myApi/settings.py` like this:
+Next let's add these packages to our project `INSTALLED_APPS` inside `myApi/settings.py` like this:
 
 ```python
 INSTALLED_APPS = [
@@ -60,9 +60,7 @@ INSTALLED_APPS = [
 
 # 3. Scaffold a blog api with Articles and Authors
 
-Our blog api will be composed of two main resources an Article and a Author.
-
-- Let's scaffold our Author first:
+Our blog api will be composed of two main resources an Article and a Author, Let's scaffold our Author first:
 
 ```bash
 $ python manage.py dr_scaffold blog Author name:charfield
@@ -72,7 +70,7 @@ $ python manage.py dr_scaffold blog Author name:charfield
 
 > this command will generate a blog folder with `models.py` > `admin.py` `views.py` `serializers.py` `urls.py` all populated with appropriate code that your REST api needs for Author resource
 
-- Lets also generate the Article resource:
+Lets also generate the Article resource:
 
 ```bash
 $ python manage.py dr_scaffold blog Post body:textfield author:foreignkey:Author
@@ -82,7 +80,7 @@ $ python manage.py dr_scaffold blog Post body:textfield author:foreignkey:Author
 
 > this command will do the same thing but also will add a relation to our Author resource through a `foreignkey` field.
 
-- In order to generate the database tables let's add blog to our `INSTALLED_APPS` inside `myApi/settings.py`:
+In order to generate the database tables let's add blog to our `INSTALLED_APPS` inside `myApi/settings.py`:
 
 ```python
 INSTALLED_APPS = [
@@ -93,14 +91,14 @@ INSTALLED_APPS = [
 ]
 ```
 
-- Then let's run these commands to generate our migrations and migrate the database:
+Then let's run these commands to generate our migrations and migrate the database:
 
 ```bash
 $ python manage.py makemigrations
 $ python manage.py migrate
 ```
 
-- Finally add our blog to our project's `urlpatterns` inside `myApi/urls.py`:
+Finally add our blog to our project's `urlpatterns` inside `myApi/urls.py`:
 
 ```python
 urlpatterns = [
@@ -109,13 +107,13 @@ urlpatterns = [
 ]
 ```
 
-- Don't forget to import include in your project's `urls.py` like so :
+Don't forget to import include in your project's `urls.py` like so :
 
 ```python
 from django.conf.urls import include
 ```
 
-- Your `urls.py` should look something like this in the end:
+Your `urls.py` should look something like this in the end:
 
 ```python
 from django.conf.urls import include #our added import
@@ -128,6 +126,6 @@ urlpatterns = [
 ]
 ```
 
-- Now that we are completely done let's run `python manage.py runserver` and head over to `http://127.0.0.1:8000/blog/` to see your fully created REST blog API.. and also you can generate a super user with `python manage.py createsuperuser` then head over to `http://127.0.0.1:8000/admin` to check the admin panel.
+Now that we are completely done let's run `python manage.py runserver` and head over to `http://127.0.0.1:8000/blog/` to see your fully created REST blog API.. and also you can generate a super user with `python manage.py createsuperuser` then head over to `http://127.0.0.1:8000/admin` to check the admin panel.
 
 Don't forget to star the [repo](https://github.com/Abdenasser/dr_scaffold) on github If you like it.. Enjoy 🎉 !
