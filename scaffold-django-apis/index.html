@@ -45,9 +45,7 @@ void function() {
 <h1>1. Create a django project:</h1>
 <p>Let’s create a django project using this django-admin command:</p>
 <div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash">$ django-admin startproject myApi</code></pre></div>
-<blockquote>
-<p>this command does the same as <code class="language-text">python manage.py startproject myApi</code></p>
-</blockquote>
+<p>this command does the same as <code class="language-text">python manage.py startproject myApi</code> the only difference is that it doesn’t require a python environment to get executed.</p>
 <p>Let’s then cd to our newly created django project <code class="language-text">cd myApi</code> and create a virtualenv with:</p>
 <div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash">$ python3 -m virtualenv <span class="token function">env</span></code></pre></div>
 <p>Finally let’s activate our virtual env with:</p>
@@ -67,16 +65,12 @@ $ pip <span class="token function">install</span> dr-scaffold</code></pre></div>
 <div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash">$ python manage.py dr_scaffold blog Author name:charfield
 
 🎉 Your RESTful Author api resource is ready 🎉</code></pre></div>
-<blockquote>
 <p>this command will generate a blog folder with <code class="language-text">models.py</code> > <code class="language-text">admin.py</code> <code class="language-text">views.py</code> <code class="language-text">serializers.py</code> <code class="language-text">urls.py</code> all populated with appropriate code that your REST api needs for Author resource</p>
-</blockquote>
 <p>Lets also generate the Article resource:</p>
 <div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash">$ python manage.py dr_scaffold blog Post body:textfield author:foreignkey:Author
 
 🎉 Your RESTful Post api resource is ready 🎉</code></pre></div>
-<blockquote>
 <p>this command will do the same thing but also will add a relation to our Author resource through a <code class="language-text">foreignkey</code> field.</p>
-</blockquote>
 <p>In order to generate the database tables let’s add blog to our <code class="language-text">INSTALLED_APPS</code> inside <code class="language-text">myApi/settings.py</code>:</p>
 <div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python">INSTALLED_APPS <span class="token operator">=</span> <span class="token punctuation">[</span>
     <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">,</span>
