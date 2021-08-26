@@ -41,8 +41,9 @@ const Bio = () => {
         Hey 👋 I'm{" "}
         <a href="https://twitter.com/__abdenasser" target="_blank">
           @__abdenasser
-        </a>
-        <br />I make coffee into codes
+        </a>{" "}
+        a Husband, a Father.next and a Software Engineer
+        <br />
       </p>
     </div>
   )
