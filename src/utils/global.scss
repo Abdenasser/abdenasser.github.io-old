@@ -198,9 +198,11 @@ main {
 
 .post {
   width: 100%;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
-    Arial, sans-serif;
+  font-family: -apple-system, "BlinkMacSystemFont", "Segoe UI", "Roboto",
+    "Helvetica Neue", "Arial", "Noto Sans", sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 1.1rem;
+  font-weight: 300;
   a {
     color: #9450ff;
     // box-shadow: 0 1px 0 0 currentColor;
@@ -270,7 +272,8 @@ main {
 code[class*="language-"],
 pre[class*="language-"] {
   color: #565256; /* base00 */
-  font-family: Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
+  font-family: "SFMono-Regular", Consolas, "Roboto Mono", "Droid Sans Mono",
+    "Liberation Mono", Menlo, Courier, monospace;
   text-align: left;
   white-space: pre;
   word-spacing: normal;
