@@ -25,7 +25,7 @@ Let's create a django project using this django-admin command:
 $ django-admin startproject myApi
 ```
 
-> this command does the same as `python manage.py startproject myApi`
+this command does the same as `python manage.py startproject myApi` the only difference is that it doesn't require a python environment to get executed.
 
 Let's then cd to our newly created django project `cd myApi` and create a virtualenv with:
 
@@ -68,7 +68,7 @@ $ python manage.py dr_scaffold blog Author name:charfield
 🎉 Your RESTful Author api resource is ready 🎉
 ```
 
-> this command will generate a blog folder with `models.py` > `admin.py` `views.py` `serializers.py` `urls.py` all populated with appropriate code that your REST api needs for Author resource
+this command will generate a blog folder with `models.py` > `admin.py` `views.py` `serializers.py` `urls.py` all populated with appropriate code that your REST api needs for Author resource
 
 Lets also generate the Article resource:
 
@@ -78,7 +78,7 @@ $ python manage.py dr_scaffold blog Post body:textfield author:foreignkey:Author
 🎉 Your RESTful Post api resource is ready 🎉
 ```
 
-> this command will do the same thing but also will add a relation to our Author resource through a `foreignkey` field.
+this command will do the same thing but also will add a relation to our Author resource through a `foreignkey` field.
 
 In order to generate the database tables let's add blog to our `INSTALLED_APPS` inside `myApi/settings.py`:
 
