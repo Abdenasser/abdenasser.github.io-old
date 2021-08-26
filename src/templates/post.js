@@ -22,13 +22,13 @@ class Post extends React.Component {
         />
         <article className="post">
           <header>
-            <h2>
+            <h1>
               <Lettering title={post.frontmatter.title} />
-            </h2>
+            </h1>
             <p className="date">{post.frontmatter.date}</p>
             {post.frontmatter.tags ? (
               <ul className="tags">
-                {post.frontmatter.tags.map(tag => (
+                {post.frontmatter.tags.map((tag) => (
                   <li key={tag + `tag`}>
                     <AniLink
                       cover

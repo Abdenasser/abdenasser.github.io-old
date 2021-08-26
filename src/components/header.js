@@ -23,17 +23,15 @@ class Header extends React.Component {
                 <label className="tog">
                   <input
                     type="checkbox"
-                    onChange={e =>
+                    onChange={(e) =>
                       toggleTheme(e.target.checked ? "dark" : "light")
                     }
                     checked={theme === "dark"}
                   />
                   {theme === "dark" ? (
-                    <div className="on">
-                    </div>
+                    <div className="on"></div>
                   ) : (
-                    <div className="off">
-                    </div>
+                    <div className="off"></div>
                   )}
                 </label>
               )}

@@ -53,32 +53,37 @@ class Layout extends React.Component {
       <div className="container">
         <div className="content">
           <Header siteTitle={title} />
+          <hr></hr>
           <main>{children}</main>
         </div>
         <footer>
           © {new Date().getFullYear()}{" "}
-          <a href="https://ajiang.co" target="_blank" rel="noopener noreferrer">
-            阿江
+          <a
+            href="https://abdenasser.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Abdenasser Elidrissi
           </a>
           <div className="social-links">
             <a
-              href="https://twitter.com/anikijiang"
+              href="https://twitter.com/__abdenasser"
               target="_blank"
               rel="noopener noreferrer"
             >
               twitter
             </a>{" "}
             &bull;{" "}
-            <a
+            {/* <a
               href="https://instagram.com/veryben"
               target="_blank"
               rel="noopener noreferrer"
             >
               instagram
             </a>{" "}
-            &bull;{" "}
+            &bull;{" "} */}
             <a
-              href="https://github.com/teaware"
+              href="https://github.com/Abdenasser"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -86,11 +91,11 @@ class Layout extends React.Component {
             </a>{" "}
             &bull;{" "}
             <a
-              href="https://codepen.io/farm-boy"
+              href="https://www.linkedin.com/in/abdenasser/"
               target="_blank"
               rel="noopener noreferrer"
             >
-              codepen
+              linkedin
             </a>
           </div>
         </footer>
