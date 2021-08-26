@@ -31,18 +31,17 @@ const Bio = () => {
           marginBottom: 0,
           width: rhythm(2),
           height: rhythm(2),
-          borderRadius: "50%",
-          overflow: "hidden",
         }}
       >
         <Img fluid={data.placeholderImage.childImageSharp.fluid} alt="阿江" />
       </div>
       <p style={{ maxWidth: 400 }}>
-        Hey 👋 I'm{" "}
+        Hi 👋 I'm{" "}
         <a href="https://twitter.com/__abdenasser" target="_blank">
           @__abdenasser
         </a>{" "}
-        a Husband, a Father.next and a Software Engineer
+        and I'm a Husband, a Father.next and a Software Engineer.. I love coffee
+        and computers!
         <br />
       </p>
     </div>

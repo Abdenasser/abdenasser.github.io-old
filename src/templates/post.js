@@ -49,7 +49,8 @@ class Post extends React.Component {
               marginBottom: rhythm(1),
             }}
           />
-          <Bio />
+          <p>Until the next one, drink good quality coffee and stay safe!</p>
+          {/* <Bio /> */}
         </article>
       </Layout>
     )
