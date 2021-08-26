@@ -13,6 +13,8 @@ body.light {
   --inlineCode-text: #470672;
   --hover: #fcf113;
   --link: #9450ff;
+  --code-background: #fcf113ab;
+  --code-text: #565256;
 }
 
 body.dark {
@@ -27,6 +29,8 @@ body.dark {
   --inlineCode-text: #e6e6e6;
   --hover: #8c61ff;
   --link: #fcf113;
+  --code-background: #1e192b;
+  --code-text: #ffe100;
 }
 
 .container {
@@ -294,7 +298,7 @@ main {
 
 code[class*="language-"],
 pre[class*="language-"] {
-  color: #565256; /* base00 */
+  color: var(--code-text); /* base00 */
   font-family: "SFMono-Regular", Consolas, "Roboto Mono", "Droid Sans Mono",
     "Liberation Mono", Menlo, Courier, monospace;
   text-align: left;
@@ -339,7 +343,7 @@ pre[class*="language-"] {
 
 :not(pre) > code[class*="language-"],
 pre[class*="language-"] {
-  background-color: #fcf113; /* base3 */
+  background-color: var(--code-background); /* base3 */
 }
 
 /* Inline code */
