@@ -13,8 +13,8 @@ body.light {
   --inlineCode-text: #470672;
   --hover: #fcf113;
   --link: #9450ff;
-  --code-background: #fcf113ab;
-  --code-text: #565256;
+  --code-background: #f6edfa;
+  --code-text: #663399;
 }
 
 body.dark {
@@ -30,7 +30,7 @@ body.dark {
   --hover: #8c61ff;
   --link: #ffe100;
   --code-background: #1e192b;
-  --code-text: #efe38f;
+  --code-text: #dea3f9;
 }
 
 .container {
@@ -301,13 +301,14 @@ pre[class*="language-"] {
   color: var(--code-text); /* base00 */
   font-family: "SFMono-Regular", Consolas, "Roboto Mono", "Droid Sans Mono",
     "Liberation Mono", Menlo, Courier, monospace;
+  font-size: 0.75rem;
   text-align: left;
   white-space: pre;
   word-spacing: normal;
   word-break: normal;
   word-wrap: normal;
 
-  line-height: 1.5;
+  line-height: 1.7;
 
   -moz-tab-size: 4;
   -o-tab-size: 4;
