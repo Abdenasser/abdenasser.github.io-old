@@ -5,7 +5,7 @@ date: "2021-08-26"
 spoiler: "The very first blog post"
 ---
 
-![scaffold django api application with command line](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/avtoo8afnu3d4dornj5h.png)
+![scaffold django api application with command line](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/b8sj9xtznnwd1doijr6f.png)
 
 Hey 👋 my name is Abdenasser I'll give you a proper introduction to who I'm in the next blog, but today I'll show you how to use this little django scaffold library I crafted last week https://github.com/Abdenasser/dr_scaffold to create a ready to use and fully functional REST apis with django only using the command line, let's get started.
 
@@ -64,7 +64,6 @@ Our blog api will be composed of two main resources an Article and a Author, Let
 
 ```bash
 $ python manage.py dr_scaffold blog Author name:charfield
-
 🎉 Your RESTful Author api resource is ready 🎉
 ```
 
@@ -74,7 +73,6 @@ Lets also generate the Article resource:
 
 ```bash
 $ python manage.py dr_scaffold blog Post body:textfield author:foreignkey:Author
-
 🎉 Your RESTful Post api resource is ready 🎉
 ```
 
