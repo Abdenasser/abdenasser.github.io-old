@@ -58,6 +58,13 @@ INSTALLED_APPS = [
 ]
 ```
 
+Then let's add our core and api folders settings to `myApi/settings.py`, (for the simplicity of the tutorial we'll leave them empty):
+
+```python
+CORE_FOLDER = ""  # you can leave them empty
+API_FOLDER = ""   # or set them to be the same
+```
+
 # 3. Scaffold a blog api with Articles and Authors
 
 Our blog api will be composed of two main resources an Article and a Author, Let's scaffold our Author first:
