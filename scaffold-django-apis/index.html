@@ -60,6 +60,9 @@ $ pip <span class="token function">install</span> dr-scaffold</code></pre></div>
     <span class="token string">'rest_framework'</span><span class="token punctuation">,</span>
     <span class="token string">'dr_scaffold'</span>
 <span class="token punctuation">]</span></code></pre></div>
+<p>Then let’s add our core and api folders settings to <code class="language-text">myApi/settings.py</code>, (for the simplicity of the tutorial we’ll leave them empty):</p>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python">CORE_FOLDER <span class="token operator">=</span> <span class="token string">""</span>  <span class="token comment"># you can leave them empty</span>
+API_FOLDER <span class="token operator">=</span> <span class="token string">""</span>   <span class="token comment"># or set them to be the same</span></code></pre></div>
 <h1>3. Scaffold a blog api with Articles and Authors</h1>
 <p>Our blog api will be composed of two main resources an Article and a Author, Let’s scaffold our Author first:</p>
 <div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash">$ python manage.py dr_scaffold blog Author name:charfield
