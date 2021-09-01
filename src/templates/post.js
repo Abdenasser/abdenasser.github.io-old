@@ -4,7 +4,7 @@ import { kebabCase } from "lodash"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
 import Lettering from "../components/lettering"
 
-import Bio from "../components/bio"
+// import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { rhythm } from "../utils/typography"

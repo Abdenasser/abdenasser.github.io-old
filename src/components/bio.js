@@ -36,8 +36,16 @@ const Bio = () => {
         <Img fluid={data.placeholderImage.childImageSharp.fluid} alt="阿江" />
       </div>
       <p style={{ maxWidth: 400 }}>
-        Hi 👋 I'm{" "}
-        <a href="https://twitter.com/__abdenasser" target="_blank">
+        Hi{" "}
+        <span role="img" aria-label="waving emoji">
+          👋
+        </span>{" "}
+        I'm{" "}
+        <a
+          href="https://twitter.com/__abdenasser"
+          target="_blank"
+          rel="noreferrer"
+        >
           @__abdenasser
         </a>{" "}
         and I'm a Husband, a Father.next and a Software Engineer.. I love coffee
