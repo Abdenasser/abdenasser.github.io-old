@@ -1,5 +1,5 @@
 ---
-title: "My personal django rest framework serializer notes"
+title: "My personal drf serializer notes"
 tags: ["django", "apis", "notes"]
 date: "2021-08-26"
 spoiler: "A use case driven draft, UDD 🤔 !!"
