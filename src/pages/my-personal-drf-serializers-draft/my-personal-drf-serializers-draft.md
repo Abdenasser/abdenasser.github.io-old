@@ -21,14 +21,14 @@ Before today it was only me and god who can read my hand writing, but today it i
   - Custom Field Validation
   - Using Multiple Serializers
   --------------------------
-2 - Data Manipulation
+2 - Data
   --------------------------
   - Custom Data Validation
   - Custom Output with `to_representation`()
   - Custom Input with `to_internal_value`().
   - Pass additional data directly to `save()`
   --------------------------
-3 - Magical Keywords
+3 - Keywords
   --------------------------
   - The `source` Keyword
   - The `context` Keyword
@@ -104,7 +104,7 @@ class MyViewSet(viewsets.ModelViewSet):
 <br>
 <hr>
 
-## 2- Data Manipulation
+## 2- Data
 
 ### Custom Data Validation
 
@@ -201,7 +201,7 @@ serializer = CommentSerializer(comment, data=data)
 <br>
 <hr>
 
-## 3- Magical Keywords
+## 3- Keywords
 
 ### The source Keyword
 
@@ -237,7 +237,5 @@ def to_representation(self, instance):
 <br>
 
 ## Final word:
-
-> Three things I appreciate the most in my life are: coffee, computers and a pretty well documented software.
 
 Django Rest Framework has a very good documentation which you can find and read [here](https://www.django-rest-framework.org/), while using serializers you are most of the time using, overriding or extending the base serializer functionalities go check it out [here](https://github.com/encode/django-rest-framework/blob/master/rest_framework/serializers.py).
