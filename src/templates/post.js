@@ -49,7 +49,10 @@ class Post extends React.Component {
               marginBottom: rhythm(1),
             }}
           />
-          <p>Until the next one, drink good quality coffee and stay safe!</p>
+          <p>
+            Until the next one, feel free to get in touch at one of the social
+            links in the footer below!
+          </p>
           {/* <Bio /> */}
         </article>
       </Layout>

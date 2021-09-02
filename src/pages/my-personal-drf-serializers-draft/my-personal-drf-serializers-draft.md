@@ -1,15 +1,17 @@
 ---
-title: "A personal draft about serializers in django"
-tags: ["django"]
+title: "My personal django rest framework serializer notes"
+tags: ["django", "apis", "notes"]
 date: "2021-08-26"
 spoiler: "A use case driven draft, UDD 🤔 !!"
 ---
 
-Before today it was only me and god who can read my hand writing, but today it is only god who can... I really got stuck reading one of my DRF drafts about `serializers` and that's why I decided to write a digital copy of it, which you might find useful.
+Before today it was only me and god who can read my hand writing, but today it is only god who can... today I got stuck reading one of my DRF drafts about `serializers` and decided that it's that time of the year again where I start thinking that I should have a blog where I can save my notes -then forget about it again-, but as I already got a blog I said why not 🤔 ? ... let's create a digital copy of my drf serializer notes, maybe someone will find it useful.
 
 > save time creating django apis with [this cool django package](https://github.com/Abdenasser/dr_scaffold), and support the repository by dropping a star ⭐
 
 <hr>
+
+Let's define an Index or a table of content that we can use as reference in the future.
 
 ## Table of content
 
@@ -238,4 +240,4 @@ def to_representation(self, instance):
 
 ## Final word:
 
-Django Rest Framework has a very good documentation which you can find and read [here](https://www.django-rest-framework.org/), while using serializers you are most of the time using, overriding or extending the base serializer functionalities go check it out [here](https://github.com/encode/django-rest-framework/blob/master/rest_framework/serializers.py).
+Django Rest Framework has a very good documentation which you can find and read [here](https://www.django-rest-framework.org/), try to spend some time navigation it and use it as a fall back any time you feel that things started getting complicated in your serializers, also bare in mind that while you are using serializers you are most of the time using, overriding or extending the base serializer functionalities so go check it out and take a look at it [here](https://github.com/encode/django-rest-framework/blob/master/rest_framework/serializers.py).
