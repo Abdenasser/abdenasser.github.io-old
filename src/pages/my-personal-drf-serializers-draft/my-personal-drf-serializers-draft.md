@@ -240,4 +240,4 @@ def to_representation(self, instance):
 
 ## Final word:
 
-Django Rest Framework has a very good documentation which you can find and read [here](https://www.django-rest-framework.org/), try to spend some time navigation it and use it as a fall back any time you feel that things started getting complicated in your serializers, also bare in mind that while you are using serializers you are most of the time using, overriding or extending the base serializer functionalities so go check it out and take a look at it [here](https://github.com/encode/django-rest-framework/blob/master/rest_framework/serializers.py).
+Django Rest Framework has a very good documentation which you can find and read [here](https://www.django-rest-framework.org/), try to spend some time on it and use it as a fall back any time you feel that things started getting complicated in your serializers, also bare in mind that while you are using serializers you are most of the time using, overriding or extending the base serializer functionalities so go check it out and take a look at it [here](https://github.com/encode/django-rest-framework/blob/master/rest_framework/serializers.py).
