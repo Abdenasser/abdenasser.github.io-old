@@ -5,6 +5,8 @@ date: "2021-08-26"
 spoiler: "A use case driven draft, UDD 🤔 !!"
 ---
 
+![My personal django rest framework serializer notes](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/crbbrquqluuxpexxxodb.jpeg)
+
 Before today it was only me and god who can read my hand writing, but today it is only god who can... today I got stuck reading one of my DRF drafts about `serializers` and decided that it's that time of the year again where I start thinking that I should have a blog where I can save my notes -then forget about it again-, but as I already got a blog I said why not 🤔 ? ... let's create a digital copy of my drf serializer notes, maybe someone will find it useful.
 
 > save time creating django apis with [this cool django package](https://github.com/Abdenasser/dr_scaffold), and support the repository by dropping a star ⭐
