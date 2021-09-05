@@ -1,7 +1,7 @@
 ---
 title: "My personal drf serializer notes"
 tags: ["django", "apis", "notes"]
-date: "2021-08-26"
+date: "2021-09-03"
 spoiler: "A use case driven draft, UDD 🤔 !!"
 ---
 
