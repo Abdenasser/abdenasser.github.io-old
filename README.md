@@ -1,12 +1,6 @@
 # gatsby-starter-point
 
-A humble [Gatsby Starter](https://www.gatsbyjs.com/starters/teaware/gatsby-starter-point/) for personal blog. :shipit:
-
-With fancy page transitions ✨💫
-
-& Perfect Performance 💯
-
-![Performance](./src/assets/performance.png)
+This is a tweaked and restyled version of [Gatsby Starter](https://www.gatsbyjs.com/starters/teaware/gatsby-starter-point/) which I use for my personal blog @ [abdenasser.com](https://abdenasser.com) feel free to clone it and use it for your personal websites. :shipit:
 
 ## Basic Guide
 
@@ -22,8 +16,6 @@ when it's done
 gatsby develop
 ```
 
-Happy coding 💅🏻
-
 ## Contact
 
-Contact me on [twitter](https://twitter.com/anikijiang).
+Contact me on [twitter](https://twitter.com/__abdenasser).
