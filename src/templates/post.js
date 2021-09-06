@@ -3,6 +3,7 @@ import { graphql } from "gatsby"
 import { kebabCase } from "lodash"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
 import Lettering from "../components/lettering"
+import Comments from "../components/Comments"
 
 // import Bio from "../components/bio"
 import Layout from "../components/layout"
@@ -49,10 +50,7 @@ class Post extends React.Component {
               marginBottom: rhythm(1),
             }}
           />
-          <p>
-            Until the next one, feel free to get in touch at one of the social
-            links in the footer below!
-          </p>
+          <Comments />
           {/* <Bio /> */}
         </article>
       </Layout>
